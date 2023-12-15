@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrapesJS</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/grapesjs/dist/css/grapes.min.css"
+    />
+    <script src="https://unpkg.com/grapesjs"></script>
+    <script src="https://unpkg.com/grapesjs-preset-newsletter"></script>
+    <script src="https://unpkg.com/grapesjs-preset-webpage"></script>
+    <script src="https://unpkg.com/grapesjs-plugin-forms"></script>
+    <script src="https://unpkg.com/grapesjs-navbar"></script>
+  </head>
+  <body>
+    <div id="gjs"></div>
+    <script type="text/javascript">
+      var editor = grapesjs.init({
+        container: "#gjs",
+        components: '<div class="txt-red">Hello world!</div>',
+        style: ".txt-red{color: red}",
+        plugins: [
+            "grapesjs-preset-newsletter", 
+            "grapesjs-preset-webpage", 
+            "grapesjs-plugin-forms", 
+            "grapesjs-navbar"
+        ],
+        
+      });
+    </script>
+  </body>
+</html>
